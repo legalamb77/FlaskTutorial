@@ -13,7 +13,7 @@
     {% endif %}
     <ul class=entries>
     {% for entry in entries%}
-        <li><h2> {{ entry.title }}</h2> {{ entry.text|safe}}
+    <li><h2> {{ entry.title }} </h2> <h4> {{ entry.time}} </h4> {{ entry.text|safe}}
     {% else %}
         <li><em> How are there no entries here yet?!?</em>
     {% endfor %}
